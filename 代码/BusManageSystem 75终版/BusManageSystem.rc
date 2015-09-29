@@ -1,0 +1,347 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\BusManageSystem.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\busico.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 BusManageSystem"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,21,21
+    LTEXT           "BusManageSystem 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2013",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "本公交查询系统由华中农业大学计算机科学与技术专业1104班陈浩、成娇梅、贾思辉共同完成。",
+                    IDC_STATIC,45,42,155,49
+END
+
+IDD_BUSMANAGESYSTEM_DIALOG DIALOGEX 0, 0, 319, 204
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BUS"
+FONT 10, "汉仪太极体简"
+BEGIN
+    CTEXT           "武汉市公交查询系统",IDC_STATIC,115,16,75,18
+    PUSHBUTTON      "信息管理",IDC_INFORMATION,70,56,43,14,BS_FLAT
+    PUSHBUTTON      "线路查询",IDC_SEARTHONLINE,175,56,43,14,BS_FLAT
+    PUSHBUTTON      "站点查询",IDC_SEARCHONSTATION,70,125,43,14,BS_FLAT
+    PUSHBUTTON      "站站查询",IDC_STATIONANDSTATION,175,125,43,14,BS_FLAT
+    PUSHBUTTON      "关于",IDC_ABOUT,264,133,48,21,BS_FLAT
+    PUSHBUTTON      "退出",IDCANCEL,264,176,48,21,BS_FLAT
+END
+
+IDD_INFORMATION DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BusManageSystem"
+FONT 9, "宋体"
+BEGIN
+    CTEXT           "武汉市公交查询系统---信息管理",IDC_STATIC,95,18,122,10
+    PUSHBUTTON      "退出",IDCANCEL,264,159,33,18,BS_FLAT
+    LTEXT           "公交信息增删改",IDC_STATIC,26,47,58,9
+    LTEXT           "请输入公交线路：",IDC_STATIC,25,72,67,9
+    EDITTEXT        IDC_EDIT1,99,69,60,18,ES_AUTOHSCROLL
+    LTEXT           "路",IDC_STATIC,164,75,10,11
+    LTEXT           "站点名称：",IDC_STATIC,25,101,64,11
+    LTEXT           "站点次序：",IDC_STATIC,25,129,58,11
+    EDITTEXT        IDC_EDIT3,99,125,60,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,100,98,60,18,ES_AUTOHSCROLL
+    PUSHBUTTON      "增加",IDC_ADD,213,67,43,17
+    PUSHBUTTON      "删除",IDC_DEL,213,95,43,17
+    PUSHBUTTON      "修改",IDC_CHANGE,213,120,43,17
+END
+
+IDD_SEARCHLINE DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BusManageSystem"
+FONT 10, "汉仪娃娃篆简"
+BEGIN
+    CTEXT           "武汉市公交查询系统---线路查询",-1,95,18,122,10
+    PUSHBUTTON      "退出",IDCANCEL,249,68,33,18,BS_FLAT
+    LTEXT           "请输入公交线路（all代表所有）：",-1,7,52,117,9
+    EDITTEXT        IDC_EDIT1,128,49,70,30,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_SEARCHLINE,249,50,33,18,BS_FLAT
+    LTEXT           "公交线路经过的所有站点：",-1,14,110,96,10
+    EDITTEXT        IDC_EDIT2,126,107,157,76,ES_MULTILINE | WS_VSCROLL
+END
+
+IDD_SEARCHSTATION DIALOGEX 0, 0, 276, 192
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BusManageSystem"
+FONT 10, "汉仪太极体简"
+BEGIN
+    CTEXT           "武汉市公交查询系统---站点查询",-1,96,13,122,10
+    PUSHBUTTON      "退出",IDCANCEL,221,83,33,18,BS_FLAT
+    LTEXT           "请输入要查询的公交站点：",-1,22,28,104,9
+    EDITTEXT        IDC_EDIT1,97,56,70,30,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_SEEK,221,62,33,18,BS_FLAT
+    LTEXT           "经过该站点的路线：",-1,22,111,78,10
+    EDITTEXT        IDC_EDIT2,97,126,158,50,ES_MULTILINE | WS_VSCROLL
+END
+
+IDD_STATIONANDSTATION DIALOGEX 0, 0, 288, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BusManageSystem"
+FONT 10, "汉仪太极体简"
+BEGIN
+    CTEXT           "武汉市公交查询系统---站站查询",-1,90,14,122,10
+    PUSHBUTTON      "退出",IDCANCEL,221,77,33,18,BS_FLAT
+    LTEXT           "请输入公交起始站点：",-1,13,49,81,9
+    EDITTEXT        IDC_EDIT1,101,43,70,22,ES_AUTOHSCROLL
+    PUSHBUTTON      "查询",IDC_STATIONANDSTATION,221,46,33,18,BS_FLAT
+    LTEXT           "经过该站点的路线：",-1,13,111,81,10
+    EDITTEXT        IDC_EDIT2,100,126,158,50,ES_MULTILINE | WS_VSCROLL
+    LTEXT           "请输入公交终止站点：",-1,13,81,81,9
+    EDITTEXT        IDC_EDIT3,101,74,70,22,ES_AUTOHSCROLL
+END
+
+IDD_CHANGE12 DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "BusManageSystem"
+FONT 9, "宋体"
+BEGIN
+    CTEXT           "武汉市公交查询---修改界面",IDC_STATIC,95,18,122,10
+    LTEXT           "请输入修改后的公交线路：",IDC_STATIC,25,72,67,24
+    LTEXT           "修改后站点名称：",IDC_STATIC,25,101,63,17
+    LTEXT           "修改后站点次序：",IDC_STATIC,25,129,61,20
+    EDITTEXT        IDC_EDIT1,100,69,60,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,100,127,60,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,100,96,60,18,ES_AUTOHSCROLL
+    LTEXT           "路",IDC_STATIC,167,75,20,11
+    PUSHBUTTON      "确定修改",IDC_CHANGE,217,130,43,17
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "BusManageSystem Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "BusManageSystem\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2013\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "BusManageSystem.EXE\0"
+            VALUE "ProductName", "BusManageSystem 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_BUSMANAGESYSTEM_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_INFORMATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_SEARCHLINE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_SEARCHSTATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 269
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_STATIONANDSTATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_CHANGE12, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\BUS.bmp"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\a17f58def2a5771b88319b32377e36c2.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\bitmap2.bmp"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\ff28aad5e85e901d912ef2ba290a3a8a.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 BusManageSystem(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\BusManageSystem.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
